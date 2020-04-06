@@ -16,6 +16,9 @@
 		FC622454243B6C100045F4F9 /* Dice_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622453243B6C100045F4F9 /* Dice_gameTests.swift */; };
 		FC62245F243B6C100045F4F9 /* Dice_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62245E243B6C100045F4F9 /* Dice_gameUITests.swift */; };
 		FC62246F243B7E8C0045F4F9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62246E243B7E8C0045F4F9 /* DashboardViewController.swift */; };
+		FC622472243B85330045F4F9 /* UIRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622471243B85330045F4F9 /* UIRoundedButton.swift */; };
+		FC622474243B85650045F4F9 /* UIRoundedGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622473243B85650045F4F9 /* UIRoundedGreenButton.swift */; };
+		FC622477243B88ED0045F4F9 /* ColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622476243B88ED0045F4F9 /* ColorHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FC62245E243B6C100045F4F9 /* Dice_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_gameUITests.swift; sourceTree = "<group>"; };
 		FC622460243B6C100045F4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC62246E243B7E8C0045F4F9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		FC622471243B85330045F4F9 /* UIRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundedButton.swift; sourceTree = "<group>"; };
+		FC622473243B85650045F4F9 /* UIRoundedGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundedGreenButton.swift; sourceTree = "<group>"; };
+		FC622476243B88ED0045F4F9 /* ColorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		FC62243B243B6C0E0045F4F9 /* Dice game */ = {
 			isa = PBXGroup;
 			children = (
+				FC622475243B88C60045F4F9 /* helpers */,
+				FC622470243B84F10045F4F9 /* customControls */,
 				FC62246C243B7E180045F4F9 /* features */,
 				FC62243C243B6C0E0045F4F9 /* AppDelegate.swift */,
 				FC62243E243B6C0E0045F4F9 /* SceneDelegate.swift */,
@@ -145,6 +153,23 @@
 				FC62246E243B7E8C0045F4F9 /* DashboardViewController.swift */,
 			);
 			path = dashboard;
+			sourceTree = "<group>";
+		};
+		FC622470243B84F10045F4F9 /* customControls */ = {
+			isa = PBXGroup;
+			children = (
+				FC622471243B85330045F4F9 /* UIRoundedButton.swift */,
+				FC622473243B85650045F4F9 /* UIRoundedGreenButton.swift */,
+			);
+			path = customControls;
+			sourceTree = "<group>";
+		};
+		FC622475243B88C60045F4F9 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC622476243B88ED0045F4F9 /* ColorHelpers.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC622477243B88ED0045F4F9 /* ColorHelpers.swift in Sources */,
 				FC622441243B6C0E0045F4F9 /* ViewController.swift in Sources */,
+				FC622474243B85650045F4F9 /* UIRoundedGreenButton.swift in Sources */,
+				FC622472243B85330045F4F9 /* UIRoundedButton.swift in Sources */,
 				FC62243D243B6C0E0045F4F9 /* AppDelegate.swift in Sources */,
 				FC62243F243B6C0E0045F4F9 /* SceneDelegate.swift in Sources */,
 				FC62246F243B7E8C0045F4F9 /* DashboardViewController.swift in Sources */,
