@@ -20,6 +20,8 @@
 		FC622474243B85650045F4F9 /* UIRoundedGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622473243B85650045F4F9 /* UIRoundedGreenButton.swift */; };
 		FC622477243B88ED0045F4F9 /* ColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622476243B88ED0045F4F9 /* ColorHelpers.swift */; };
 		FC62247A243B92B10045F4F9 /* LuckyNumberBannerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622479243B92B10045F4F9 /* LuckyNumberBannerColor.swift */; };
+		FC62247D243C9B6C0045F4F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62247C243C9B6C0045F4F9 /* Constants.swift */; };
+		FC622480243CDC610045F4F9 /* RoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62247F243CDC610045F4F9 /* RoundModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		FC622473243B85650045F4F9 /* UIRoundedGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundedGreenButton.swift; sourceTree = "<group>"; };
 		FC622476243B88ED0045F4F9 /* ColorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelpers.swift; sourceTree = "<group>"; };
 		FC622479243B92B10045F4F9 /* LuckyNumberBannerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyNumberBannerColor.swift; sourceTree = "<group>"; };
+		FC62247C243C9B6C0045F4F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC62247F243CDC610045F4F9 /* RoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 		FC62243B243B6C0E0045F4F9 /* Dice game */ = {
 			isa = PBXGroup;
 			children = (
+				FC62247E243CDC490045F4F9 /* models */,
+				FC62247B243C9A8E0045F4F9 /* constants */,
 				FC622478243B92750045F4F9 /* colors */,
 				FC622475243B88C60045F4F9 /* helpers */,
 				FC622470243B84F10045F4F9 /* customControls */,
@@ -181,6 +187,22 @@
 				FC622479243B92B10045F4F9 /* LuckyNumberBannerColor.swift */,
 			);
 			path = colors;
+			sourceTree = "<group>";
+		};
+		FC62247B243C9A8E0045F4F9 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				FC62247C243C9B6C0045F4F9 /* Constants.swift */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		FC62247E243CDC490045F4F9 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FC62247F243CDC610045F4F9 /* RoundModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,8 +342,10 @@
 				FC622472243B85330045F4F9 /* UIRoundedButton.swift in Sources */,
 				FC62243D243B6C0E0045F4F9 /* AppDelegate.swift in Sources */,
 				FC62247A243B92B10045F4F9 /* LuckyNumberBannerColor.swift in Sources */,
+				FC622480243CDC610045F4F9 /* RoundModel.swift in Sources */,
 				FC62243F243B6C0E0045F4F9 /* SceneDelegate.swift in Sources */,
 				FC62246F243B7E8C0045F4F9 /* DashboardViewController.swift in Sources */,
+				FC62247D243C9B6C0045F4F9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
