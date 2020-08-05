@@ -12,8 +12,11 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet weak var lblRound: UILabel!
     @IBOutlet weak var lblLuckyNumber: UILabel!
+    @IBOutlet weak var lblRollMessage: UILabel!
     @IBOutlet weak var imgDice: UIImageView!
     @IBOutlet weak var lblTime: UILabel!
+    
+    private var luckyNumber: Int = 0
     
     let child = SpinnerViewController()
     
@@ -29,8 +32,21 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func onRollClikced(_ sender: Any) {
-        
         imgDice.rotate(180, 0)
+
+        let rolledNumber = Int.random(in: 1...6)
+        
+        if rolledNumber == luckyNumber {
+            let title = "You win"
+            let message = "\(rolledNumber) is your lucky number you've won this round, play next round "
+            
+            //How to show ui alert with only one option
+            showUIAlert(self, title, message, "...", "Yes")
+        }
+        else{
+            lblRollMessage.text = "You rolled a \(rolledNumber) please try again"
+        }
+        
     }
     
     func iniRound(){
@@ -38,13 +54,9 @@ class DashboardViewController: UIViewController {
 
         do{
           let round = try fetchRoundJsonAsync()
-          let luckyNumber = round?.luckyNumber
+            luckyNumber = round?.luckyNumber ?? 0
         
-         lblLuckyNumber.text = " \(luckyNumber ?? 0)"
-            
-// let title = "Lucky number"
-// let message = "Lucky number is \(luckyNumber ?? 0)"
-// showUIAlert(self, title, message, "No", "Yes")
+         lblLuckyNumber.text = "\(luckyNumber)"
           
         } catch {
            print("Failed !!!!!!!!!!!!!!", error)
