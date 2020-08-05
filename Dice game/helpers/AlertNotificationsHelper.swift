@@ -1,10 +1,13 @@
 import Foundation
 import UIKit
 
-public func showUIAlert(_ view: UIViewController, _ title: String, _ message: String, _ leftButtonText: String, _ rightButtonText: String){
+// Fix callbacks
+// http://onedayitwillmake.com/blog/2016/06/caanimation-completion-callback-block/
+public func showUIAlert(_ view: UIViewController, _ title: String, _ message: String, _ leftButtonText: String, _ rightButtonText: String, leftActionHandler: ((UIAlertAction) -> Void)? = nil, rightActionHandler: ((UIAlertAction) -> Void)? = nil){
+    
    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-   alert.addAction(UIAlertAction(title: rightButtonText, style: .default, handler: nil))
-   alert.addAction(UIAlertAction(title: leftButtonText, style: .cancel, handler: nil))
+   alert.addAction(UIAlertAction(title: rightButtonText, style: .default, handler: rightActionHandler))
+   alert.addAction(UIAlertAction(title: leftButtonText, style: .cancel, handler: leftActionHandler))
    view.present(alert, animated: true)
 }
 

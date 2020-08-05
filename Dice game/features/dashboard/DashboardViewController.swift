@@ -32,7 +32,7 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func onRollClikced(_ sender: Any) {
-        imgDice.rotate(180, 0)
+        imgDice.rotate(180, 1, 0)
 
         let rolledNumber = Int.random(in: 1...6)
         
@@ -41,7 +41,7 @@ class DashboardViewController: UIViewController {
             let message = "\(rolledNumber) is your lucky number you've won this round, play next round "
             
             //How to show ui alert with only one option
-            showUIAlert(self, title, message, "...", "Yes")
+            showUIAlert(self, title, message, "...", "Yes", leftActionHandler: nil, rightActionHandler: nil)
         }
         else{
             lblRollMessage.text = "You rolled a \(rolledNumber) please try again"
