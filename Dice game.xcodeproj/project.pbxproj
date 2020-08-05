@@ -22,6 +22,9 @@
 		FC62247A243B92B10045F4F9 /* LuckyNumberBannerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622479243B92B10045F4F9 /* LuckyNumberBannerColor.swift */; };
 		FC62247D243C9B6C0045F4F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62247C243C9B6C0045F4F9 /* Constants.swift */; };
 		FC622480243CDC610045F4F9 /* RoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62247F243CDC610045F4F9 /* RoundModel.swift */; };
+		FC8D816024DACC5100BE104E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D815F24DACC5100BE104E /* UIViewExtensions.swift */; };
+		FC8D816224DAD03C00BE104E /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D816124DAD03C00BE104E /* SpinnerViewController.swift */; };
+		FC8D816424DAD0C700BE104E /* AlertNotificationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D816324DAD0C700BE104E /* AlertNotificationsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		FC622479243B92B10045F4F9 /* LuckyNumberBannerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyNumberBannerColor.swift; sourceTree = "<group>"; };
 		FC62247C243C9B6C0045F4F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FC62247F243CDC610045F4F9 /* RoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModel.swift; sourceTree = "<group>"; };
+		FC8D815F24DACC5100BE104E /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		FC8D816124DAD03C00BE104E /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		FC8D816324DAD0C700BE104E /* AlertNotificationsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNotificationsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		FC62243B243B6C0E0045F4F9 /* Dice game */ = {
 			isa = PBXGroup;
 			children = (
+				FC8D815E24DACC0200BE104E /* extensions */,
 				FC62247E243CDC490045F4F9 /* models */,
 				FC62247B243C9A8E0045F4F9 /* constants */,
 				FC622478243B92750045F4F9 /* colors */,
@@ -169,6 +176,7 @@
 			children = (
 				FC622471243B85330045F4F9 /* UIRoundedButton.swift */,
 				FC622473243B85650045F4F9 /* UIRoundedGreenButton.swift */,
+				FC8D816124DAD03C00BE104E /* SpinnerViewController.swift */,
 			);
 			path = customControls;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				FC622476243B88ED0045F4F9 /* ColorHelpers.swift */,
+				FC8D816324DAD0C700BE104E /* AlertNotificationsHelper.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -203,6 +212,14 @@
 				FC62247F243CDC610045F4F9 /* RoundModel.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		FC8D815E24DACC0200BE104E /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC8D815F24DACC5100BE104E /* UIViewExtensions.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,9 +353,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8D816024DACC5100BE104E /* UIViewExtensions.swift in Sources */,
 				FC622477243B88ED0045F4F9 /* ColorHelpers.swift in Sources */,
 				FC622441243B6C0E0045F4F9 /* ViewController.swift in Sources */,
 				FC622474243B85650045F4F9 /* UIRoundedGreenButton.swift in Sources */,
+				FC8D816224DAD03C00BE104E /* SpinnerViewController.swift in Sources */,
+				FC8D816424DAD0C700BE104E /* AlertNotificationsHelper.swift in Sources */,
 				FC622472243B85330045F4F9 /* UIRoundedButton.swift in Sources */,
 				FC62243D243B6C0E0045F4F9 /* AppDelegate.swift in Sources */,
 				FC62247A243B92B10045F4F9 /* LuckyNumberBannerColor.swift in Sources */,

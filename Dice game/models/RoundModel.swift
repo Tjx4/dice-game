@@ -1,6 +1,6 @@
 
 
-struct RoundModel: Decodable {
-    var luckyNumber: String? = nil
-    var user: String? = nil
+//struct RoundModel: Decodable 
+struct RoundModel: Codable {
+    var luckyNumber: Int = 0
 }
