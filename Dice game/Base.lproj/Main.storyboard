@@ -117,6 +117,8 @@
                     <connections>
                         <outlet property="imgDice" destination="YAK-Cz-k2w" id="RVI-8V-6Kq"/>
                         <outlet property="lblLuckyNumber" destination="tTS-7O-RkK" id="nJ7-CO-gss"/>
+                        <outlet property="lblRound" destination="clO-0a-qKI" id="3I7-mQ-h4W"/>
+                        <outlet property="lblTime" destination="YZM-MH-Djw" id="xu4-OA-oDB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

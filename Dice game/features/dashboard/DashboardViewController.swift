@@ -10,13 +10,20 @@ import UIKit
 
 class DashboardViewController: UIViewController {
 
+    @IBOutlet weak var lblRound: UILabel!
     @IBOutlet weak var lblLuckyNumber: UILabel!
     @IBOutlet weak var imgDice: UIImageView!
+    @IBOutlet weak var lblTime: UILabel!
     
     let child = SpinnerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         iniRound()
     }
@@ -27,18 +34,17 @@ class DashboardViewController: UIViewController {
     }
     
     func iniRound(){
-        
         showLoading()
 
         do{
           let round = try fetchRoundJsonAsync()
-
           let luckyNumber = round?.luckyNumber
-          let title = "Lucky number"
-          let message = "Lucky number is \(luckyNumber)"
-
-          lblLuckyNumber.text = "\(luckyNumber)"
-          // showUIAlert(self, title, message, "No", "Yes")
+        
+         lblLuckyNumber.text = " \(luckyNumber ?? 0)"
+            
+// let title = "Lucky number"
+// let message = "Lucky number is \(luckyNumber ?? 0)"
+// showUIAlert(self, title, message, "No", "Yes")
           
         } catch {
            print("Failed !!!!!!!!!!!!!!", error)
