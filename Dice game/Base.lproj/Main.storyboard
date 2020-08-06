@@ -48,13 +48,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-Ta-tbt" userLabel="LuckyNumberView">
                                 <rect key="frame" x="0.0" y="134" width="414" height="53"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lucky number........" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFh-LS-rYJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucky number........" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFh-LS-rYJ">
                                         <rect key="frame" x="26" y="14.5" width="181" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTS-7O-RkK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTS-7O-RkK">
                                         <rect key="frame" x="215" y="-3" width="45" height="59"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="Evy-0Y-eBa"/>
@@ -68,7 +68,8 @@
                                 <constraints>
                                     <constraint firstItem="tTS-7O-RkK" firstAttribute="leading" secondItem="gFh-LS-rYJ" secondAttribute="trailing" constant="8" id="32c-o1-NuU"/>
                                     <constraint firstItem="gFh-LS-rYJ" firstAttribute="leading" secondItem="Bcn-Ta-tbt" secondAttribute="leading" constant="26" id="Amc-FR-uNR"/>
-                                    <constraint firstItem="tTS-7O-RkK" firstAttribute="centerY" secondItem="gFh-LS-rYJ" secondAttribute="centerY" id="CXe-3w-LLk"/>
+                                    <constraint firstItem="tTS-7O-RkK" firstAttribute="centerY" secondItem="Bcn-Ta-tbt" secondAttribute="centerY" id="PS1-Yc-iGa"/>
+                                    <constraint firstItem="gFh-LS-rYJ" firstAttribute="centerY" secondItem="Bcn-Ta-tbt" secondAttribute="centerY" id="lAr-RR-4x0"/>
                                     <constraint firstAttribute="height" constant="53" id="xBm-7p-h3E"/>
                                 </constraints>
                             </view>
