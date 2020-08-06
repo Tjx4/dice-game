@@ -16,6 +16,7 @@ class DashboardViewController: UIViewController, CAAnimationDelegate {
     @IBOutlet weak var imgDice: UIImageView!
     @IBOutlet weak var lblTime: UILabel!
     
+    private var round: Int = 1
     private var luckyNumber: Int = 0
     
     let child = SpinnerViewController()
@@ -39,11 +40,33 @@ class DashboardViewController: UIViewController, CAAnimationDelegate {
         
         let rolledNumber = Int.random(in: 1...6)
         
+        let diceImage = { () -> String in
+            switch rolledNumber {
+            case 1:
+                return "di_1"
+            case 2:
+                return "di_2"
+            case 3:
+                return "di_3"
+            case 4:
+                return "di_4"
+            case 5:
+                return "di_5"
+            case 6:
+                return "di_6"
+            default:
+                return ""
+            }
+        }
+        
+        imgDice.image = UIImage(named: diceImage())
+        
         if rolledNumber == luckyNumber {
+            round += 1
+            
             let title = "You win"
             let message = "\(rolledNumber) is your lucky number you've won this round, play next round "
             
-        
            showSingleActionUIAlert(self, title, message, "Play again", leftActionHandler:{ (action) -> Void in
                 self.iniRound()
             })
@@ -56,6 +79,8 @@ class DashboardViewController: UIViewController, CAAnimationDelegate {
     func iniRound(){
         showLoading()
 
+        lblRound.text = "\(round)"
+        
         do{
           let round = try fetchRoundJsonAsync()
             luckyNumber = round?.luckyNumber ?? 0
