@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, CAAnimationDelegate {
 
     @IBOutlet weak var lblRound: UILabel!
     @IBOutlet weak var lblLuckyNumber: UILabel!
@@ -27,13 +27,16 @@ class DashboardViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         iniRound()
     }
     
     @IBAction func onRollClikced(_ sender: Any) {
-        imgDice.rotate(180, 1, 0)
-
+        imgDice.rotate(self as UIViewController, 180, 1, 0)
+    }
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        print("animationDidStop...")
+        
         let rolledNumber = Int.random(in: 1...6)
         
         if rolledNumber == luckyNumber {
@@ -46,7 +49,6 @@ class DashboardViewController: UIViewController {
         else{
             lblRollMessage.text = "You rolled a \(rolledNumber) please try again"
         }
-        
     }
     
     func iniRound(){
