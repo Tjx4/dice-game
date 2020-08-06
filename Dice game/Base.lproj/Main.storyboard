@@ -66,8 +66,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.59621923575129532" green="0.10003992826768239" blue="0.11978023843343588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="tTS-7O-RkK" firstAttribute="leading" secondItem="gFh-LS-rYJ" secondAttribute="trailing" constant="8" id="32c-o1-NuU"/>
+                                    <constraint firstItem="gFh-LS-rYJ" firstAttribute="leading" secondItem="Bcn-Ta-tbt" secondAttribute="leading" constant="26" id="Amc-FR-uNR"/>
                                     <constraint firstItem="tTS-7O-RkK" firstAttribute="centerY" secondItem="gFh-LS-rYJ" secondAttribute="centerY" id="CXe-3w-LLk"/>
-                                    <constraint firstItem="tTS-7O-RkK" firstAttribute="leading" secondItem="gFh-LS-rYJ" secondAttribute="trailing" constant="8" id="lXT-iZ-ZH2"/>
                                     <constraint firstAttribute="height" constant="53" id="xBm-7p-h3E"/>
                                 </constraints>
                             </view>
