@@ -11,6 +11,15 @@ public func showUIAlert(_ view: UIViewController, _ title: String, _ message: St
    view.present(alert, animated: true)
 }
 
+public func showSingleActionUIAlert(_ view: UIViewController, _ title: String, _ message: String, _ leftButtonText: String, leftActionHandler: ((UIAlertAction) -> Void)? = nil){
+    
+   let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+   alert.addAction(UIAlertAction(title: leftButtonText, style: .cancel, handler: leftActionHandler))
+   view.present(alert, animated: true)
+}
+
+
+
 public func showActionSheet(_ viewController:UIViewController){
     // create an actionSheet
     let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)

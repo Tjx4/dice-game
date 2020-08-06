@@ -43,8 +43,10 @@ class DashboardViewController: UIViewController, CAAnimationDelegate {
             let title = "You win"
             let message = "\(rolledNumber) is your lucky number you've won this round, play next round "
             
-            //How to show ui alert with only one option
-            showUIAlert(self, title, message, "...", "Yes", leftActionHandler: nil, rightActionHandler: nil)
+        
+           showSingleActionUIAlert(self, title, message, "Play again", leftActionHandler:{ (action) -> Void in
+                self.iniRound()
+            })
         }
         else{
             lblRollMessage.text = "You rolled a \(rolledNumber) please try again"
