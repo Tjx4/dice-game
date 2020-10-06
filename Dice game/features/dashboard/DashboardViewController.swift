@@ -23,8 +23,49 @@ class DashboardViewController: UIViewController, CAAnimationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+caller()
+    }
+    
+// This is the start of the testing
+    
+    //Todo: learn more on enums
+    enum Gender: String{
+        case Male = "Man"
+        case Female = "Women"
+    }
+    
+    class User{
+        init(_ name: String? , _ age: Int, _ gender: Gender?){
+            self.name = name
+            self.age = age
+            self.gender = gender
+        }
+        
+        var name: String? = nil
+        var age: Int = 0
+        var gender: Gender? = nil
+    }
+    
+    private func createUser(username name: String, age: Int, _ gender: Gender) -> User{
+        return User(name, age, gender)
+    }
+    
+    private func caller() {
+        let surname = "Baloyi"
+        let age = 31
+        let gender = Gender.Male
+        
+        let myUser = createUser(username: "Tshepo \(surname)", age: age, gender)
+        
+        let message = "Name is \(myUser.name), Age is \(myUser.age) and you are a \(myUser.gender?.rawValue)"
+        
+        print(message)
         
     }
+    
+    
+// This is the end of the testing
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
